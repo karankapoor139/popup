@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<iframe src="index2p.html" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none; z-index:1;">   
+
+<iframe src="main.js"> </script>
+
+<iframe src="escape.js"> </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectSphere - Find Your Match</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fas fa-heart"></i> ConnectSphere</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+<audio id="landingAudio" src="your-audio-file.mp3" preload="auto"></audio>
+
+
+       <section class="hero">
+            <div class="hero-content">
+                <h1>Find Meaningful Connections</h1>
+                <p>Discover your perfect match with our intuitive and engaging platform.</p>
+                <button class="cta-button">Sign Up for Free</button>
+            </div>
+            <div class="hero-image">
+                <img src="placeholder-hero.jpg" alt="Happy Couple">
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Why Choose ConnectSphere?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-user-check fa-2x"></i>
+                    <h3>Verified Profiles</h3>
+                    <p>Connect with genuine individuals through our profile verification system.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-sliders-h fa-2x"></i>
+                    <h3>Advanced Matching</h3>
+                    <p>Our intelligent algorithm helps you find compatible matches based on your preferences.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-comments fa-2x"></i>
+                    <h3>Seamless Communication</h3>
+                    <p>Enjoy private and secure messaging to get to know your matches better.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                    <h3>Privacy Focused</h3>
+                    <p>Your data and privacy are our top priorities. We ensure a safe and secure environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>Create Your Profile</h3>
+                    <p>Tell us about yourself and your ideal partner.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>Browse Matches</h3>
+                    <p>Explore profiles of other members and find potential connections.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>Connect & Chat</h3>
+                    <p>Start conversations and get to know your matches.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <h3>Meet & Date</h3>
+                    <p>Take your online connection to the real world!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Success Stories</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <img src="placeholder-profile1.jpg" alt="Sarah">
+                    <p>"I found the love of my life on ConnectSphere! The matching system really works."</p>
+                    <span>- Sarah, 32</span>
+                </div>
+                <div class="testimonial">
+                    <img src="placeholder-profile2.jpg" alt="John">
+                    <p>"The platform is easy to use and I've met some amazing people. Highly recommended!"</p>
+                    <span>- John, 28</span>
+                </div>
+                </div>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Ready to Find Your Someone Special?</h2>
+            <p>Join ConnectSphere today and start your journey!</p>
+            <button class="cta-button large">Sign Up Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p>&copy; 2025 ConnectSphere. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+
+        // Basic testimonial slider functionality (for demonstration)
+        const testimonialSlider = document.querySelector('.testimonial-slider');
+        let currentIndex = 0;
+
+        if (testimonialSlider) {
+            function nextTestimonial() {
+                const testimonials = testimonialSlider.querySelectorAll('.testimonial');
+                if (testimonials.length > 0) {
+                    currentIndex = (currentIndex + 1) % testimonials.length;
+                    updateTestimonialSlider();
+                }
+            }
+
+            function updateTestimonialSlider() {
+                const testimonials = testimonialSlider.querySelectorAll('.testimonial');
+                if (testimonials.length > 0) {
+                    const translateValue = -currentIndex * 100 + '%';
+                    testimonialSlider.style.transform = `translateX(${translateValue})`;
+                }
+            }
+
+            setInterval(nextTestimonial, 5000); // Auto slide every 5 seconds
+        }
+ 
+
+</script>
+
+</iframe>
+
+</body>
+</html>

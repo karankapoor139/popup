@@ -1,0 +1,380 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e91e63; /* A vibrant pink for a dating site */
+}
+
+.logo i {
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e91e63;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 0;
+    background-color: #fdecea; /* Light pink background */
+    border-radius: 8px;
+    padding: 3rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #e91e63;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c2185b;
+}
+
+.cta-button.large {
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #e91e63;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.feature-item i {
+    color: #e91e63;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-item p {
+    color: #666;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 4rem 0;
+    background-color: #fdf5e6; /* Light beige */
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #e91e63;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin: 1rem;
+    min-width: 200px;
+}
+
+.step-number {
+    display: inline-block;
+    background-color: #e91e63;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.step h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.step p {
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #e91e63;
+}
+
+.testimonial-slider {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.testimonial span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    padding: 4rem 0;
+    background-color: #ffe6f0; /* Another light pink shade */
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #e91e63;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e91e63;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+        padding-left: 2rem;
+    }
+
+    .nav-links.nav-active {
+        transform: translateX(0%);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items:
